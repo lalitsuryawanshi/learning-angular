@@ -1,0 +1,20 @@
+<!-- Media object -->
+<div class="d-flex" *ngFor="let follower of followers">
+    <!-- Image -->
+    <img 
+      src="{{ follower.avatar_url }}"
+      alt="{{ follower.avatar_url }}"
+      class="avatar me-3 rounded-circle"
+    />
+    <!-- Body -->
+    <div>
+      <h5 class="fw-bold">
+        {{ follower.login }}
+        <small class="text-muted">(id:{{ follower.id }})</small>
+      </h5>
+      <p>
+        <a href="{{ follower.html_url }}">{{ follower.html_url }}</a>
+      </p>
+    </div>
+  </div>
+  <!-- Media object -->
